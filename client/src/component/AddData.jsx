@@ -19,7 +19,7 @@ const AddData = () => {
   const handleAddData = async (e) => {
     try{
       e.preventDefault();
-      const response= await axios.post('http://localhost:9000/blog',{title:data.title, content:data.content, userId:item})
+      const response= await axios.post('https://task35-black.vercel.app/blog',{title:data.title, content:data.content, userId:item})
       fetchData() 
       if(response.data.success){
        toast.success(response.data.message)

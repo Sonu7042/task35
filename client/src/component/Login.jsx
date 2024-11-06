@@ -22,7 +22,7 @@ const Login = () => {
   const handleLogin = async (e) => {
     try {
       e.preventDefault();
-      const response = await axios.post("http://localhost:9000/user", user);
+      const response = await axios.post("https://task35-black.vercel.app/user", user);
       setItem(response.data.data._id);
       
     

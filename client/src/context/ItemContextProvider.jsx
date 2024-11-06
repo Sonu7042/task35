@@ -10,7 +10,7 @@ const ItemContextProvider = ({ children }) => {
   const [data, setData] = useState([]);
 
   const fetchData = async () => {
-    const response = await axios.get("http://localhost:9000/display");
+    const response = await axios.get("https://task35-black.vercel.app/display");
     setData(response.data.data); 
     console.log(response.data.data)
   };
